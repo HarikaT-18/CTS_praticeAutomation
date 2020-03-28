@@ -1,32 +1,47 @@
-2020-03-25 14:31:52 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 14:32:03 INFO  testcucumber:59 - Error: An account is already registered with your email address. Please login.
-2020-03-25 14:32:35 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 14:32:42 INFO  testcucumber:59 - Error: An account is already registered with your email address. Please login.
-2020-03-25 14:33:10 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 14:33:26 INFO  testcucumber:79 - Sucessfull login 
-2020-03-25 14:34:14 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 14:34:20 INFO  testcucumber:79 - Sucessfull login 
-2020-03-25 14:34:41 INFO  testcucumber:98 - Items are added to the cart
-2020-03-25 14:35:06 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 14:35:21 INFO  testcucumber:79 - Sucessfull login 
-2020-03-25 14:35:49 INFO  testcucumber:106 - Registration for demo site is sucessfully done
-2020-03-25 16:37:34 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 16:39:57 INFO  testcucumber:59 - Error: An account is already registered with your email address. Please login.
-2020-03-25 16:40:30 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 16:41:29 INFO  testcucumber:59 - Error: An account is already registered with your email address. Please login.
-2020-03-25 16:42:18 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 16:42:50 INFO  testcucumber:79 - Sucessfull login 
-2020-03-25 16:43:24 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 16:43:50 INFO  testcucumber:79 - Sucessfull login 
-2020-03-25 16:44:34 INFO  testcucumber:98 - Items are added to the cart
-2020-03-25 16:45:29 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 16:46:18 INFO  testcucumber:79 - Sucessfull login 
-2020-03-25 16:56:20 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 16:58:42 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 16:59:11 INFO  testcucumber:59 - Error: An account is already registered with your email address. Please login.
-2020-03-25 16:59:25 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 16:59:39 INFO  testcucumber:79 - Sucessfull login 
-2020-03-25 16:59:51 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
-2020-03-25 17:00:09 INFO  testcucumber:79 - Sucessfull login 
-2020-03-25 17:00:27 INFO  testcucumber:98 - Items are added to the cart
-2020-03-25 17:01:01 INFO  testcucumber:37 -  Chrome Browser is Successfully launched
+2020-03-28 11:13:55 INFO  TestCucumber12:40 -  Chrome Browser is Successfully launched
+2020-03-28 11:14:10 INFO  TestCucumber12:62 - Error: An account is already registered with your email address. Please login.
+2020-03-28 11:14:40 INFO  TestCucumber12:40 -  Chrome Browser is Successfully launched
+2020-03-28 11:14:47 INFO  TestCucumber12:62 - Error: An account is already registered with your email address. Please login.
+2020-03-28 11:15:05 INFO  TestCucumber12:40 -  Chrome Browser is Successfully launched
+2020-03-28 11:15:08 INFO  TestCucumber12:78 - Login for valid data
+2020-03-28 11:15:35 INFO  TestCucumber12:40 -  Chrome Browser is Successfully launched
+2020-03-28 11:15:43 INFO  TestCucumber12:97 - Sucessfull login 
+2020-03-28 11:15:53 INFO  TestCucumber12:116 - Items are added to the cart
+2020-03-28 11:16:21 INFO  TestCucumber12:40 -  Chrome Browser is Successfully launched
+2020-03-28 11:16:29 INFO  TestCucumber12:97 - Sucessfull login 
+2020-03-28 11:16:46 INFO  TestCucumber12:124 - Registration for demo site is sucessfully done
+2020-03-28 11:19:54 INFO  TestCucumber12:40 -  Chrome Browser is Successfully launched
+2020-03-28 11:19:56 INFO  TestCucumber12:78 - Login for valid data
+2020-03-28 11:24:28 INFO  TestCucumber12:40 -  Chrome Browser is Successfully launched
+2020-03-28 11:24:30 INFO  TestCucumber12:78 - Login for valid data
+2020-03-28 11:26:38 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:26:40 INFO  TestCucumber12:77 - Login for valid data
+2020-03-28 11:31:03 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:31:05 INFO  TestCucumber12:77 - Login for valid data
+2020-03-28 11:34:48 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:36:25 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:37:58 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:38:04 INFO  TestCucumber12:61 - Error: An account is already registered with your email address. Please login.
+2020-03-28 11:38:20 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:38:25 INFO  TestCucumber12:61 - Error: An account is already registered with your email address. Please login.
+2020-03-28 11:38:41 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:38:42 INFO  TestCucumber12:77 - Login for valid data
+2020-03-28 11:39:13 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:39:21 INFO  TestCucumber12:99 - Sucessfull login 
+2020-03-28 11:39:29 INFO  TestCucumber12:118 - Items are added to the cart
+2020-03-28 11:39:53 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:40:01 INFO  TestCucumber12:99 - Sucessfull login 
+2020-03-28 11:40:14 INFO  TestCucumber12:126 - Registration for demo site is sucessfully done
+2020-03-28 11:53:09 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:56:53 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:57:37 INFO  TestCucumber12:67 -  Register happenned sucessfully
+2020-03-28 11:57:52 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:58:01 INFO  TestCucumber12:61 - Error: An account is already registered with your email address. Please login.
+2020-03-28 11:58:20 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:58:22 INFO  TestCucumber12:77 - Login for valid data
+2020-03-28 11:58:46 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:58:55 INFO  TestCucumber12:99 - Sucessfull login 
+2020-03-28 11:59:02 INFO  TestCucumber12:118 - Items are added to the cart
+2020-03-28 11:59:20 INFO  TestCucumber12:39 -  Chrome Browser is Successfully launched
+2020-03-28 11:59:26 INFO  TestCucumber12:99 - Sucessfull login 
+2020-03-28 11:59:34 INFO  TestCucumber12:126 - Registration for demo site is sucessfully done

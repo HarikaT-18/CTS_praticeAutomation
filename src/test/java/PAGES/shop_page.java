@@ -6,21 +6,21 @@ import org.openqa.selenium.WebElement;
 
 import Utilites.libraries;
 
-public class page_4 extends libraries
+public class shop_page extends libraries
 {
 	WebDriver dr;  //Declaring WebDriver
 	WebElement we; //Declaring WebElement
 	
 	
-	public page_4(WebDriver dr)  //creating constructor for page_4
+	public shop_page(WebDriver dr)  //creating constructor for page_4
 	{
 		this.dr=dr;
 	
 	}
 	
 	 By shop=By.xpath("//ul[@id='main-nav']//li[1]//a"); //xpath for shop
-	 By productcategory=By.xpath("//ul[@class='product-categories']//li[4]//a");//xpath for productcategory
-	 By selenium=By.xpath("//a[@rel='nofollow']");//xpath for selecting one of the product in the list
+	 By productCategory=By.xpath("//ul[@class='product-categories']//li[4]//a");//xpath for productcategory
+	 By addProduct=By.xpath("//a[@rel='nofollow']");//xpath for selecting one of the product in the list
 	// By h=By.xpath("//ul[@id='main-nav']//li[5]//a");
 	 
 	 public void clk_shop()
@@ -30,12 +30,12 @@ public class page_4 extends libraries
 	 }
 	 public void clk_productcategory()
 	 {
-		 we=clickable(productcategory,50);//Adding webdriver waits for clicking productcategory
+		 we=clickable(productCategory,50);//Adding webdriver waits for clicking productcategory
 		 we.click();
 	 }
-	 public void clk_selenium()
+	 public void clk_addProduct()
 	 {
-		 we=clickable(selenium,50); //Adding webdriver waits for selecting one of the product
+		 we=clickable(addProduct,50); //Adding webdriver waits for selecting one of the product
 		 we.click();
 	 }
 //	 public void h1()
@@ -48,7 +48,7 @@ public class page_4 extends libraries
 	 {
 		 this.clk_shop();
 		 this.clk_productcategory();
-		 this.clk_selenium();
+		 this.clk_addProduct();
 		// this.h1();
 		 
 	 }

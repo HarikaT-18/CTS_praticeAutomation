@@ -4,7 +4,7 @@ Feature: Automation Website
   Register with valid data
    Given the user launch the Chrome application
     When the user open my Account page to register
-    Then the user register using "bltcts5562@gmail.com" and "Asvthoraipakkam9877"
+    Then the user register using "bltkanchav45898@gmail.com" and "Siruser@i987785#"
     
     
     
@@ -16,17 +16,21 @@ Feature: Automation Website
      Then Displays an error message that already registered
      
       
-	 Scenario:#3
- 	login with Valid data
+	Scenario Outline:#3
+ 		login with Valid data
 
-    Given the user launch the Chrome application
-    When the user open my Account page to register
-    Then  user login using "user45@gmail.com" and "mohankumar@6045"
-    Then click on the login button user go to the next page
+    	Given the user launch the Chrome application
+    	When the user open my Account page to register
+    	When User enters valid login credentials  of set <number> & clicks on login
+    	Then click on the login button user go to the next page
+    	
+    	Examples: 
+    		  | number |
+     		  |      0 |
     
 
     Scenario:#4
-   shop and add in the Automation website
+    shop and add in the Automation website
     Given the user launch the Chrome application
     When the user open my Account page to register
     Then  user login using "user45@gmail.com" and "mohankumar@6045"
@@ -35,9 +39,10 @@ Feature: Automation Website
     
     
      Scenario:#5
-   Open Demo Suite for registration
+  	 Open Demo Suite for registration
     Given the user launch the Chrome application
     When the user open my Account page to register
     Then  user login using "user45@gmail.com" and "mohankumar@6045"
     Then  user click on the Demo site and enters the details
+    
     

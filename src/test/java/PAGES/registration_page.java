@@ -3,16 +3,17 @@ package PAGES;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import Utilites.libraries;
 
-public class page_2 extends libraries
+public class registration_page extends libraries
 {
 	WebDriver dr; //Declaring WebDriver variable
 	
 	WebElement we; //Declaring Webelement
 	
-	public page_2(WebDriver dr) //Creating constructor for page_2
+	public registration_page(WebDriver dr) //Creating constructor for page_2
 	{
 		this.dr=dr;
 				
@@ -37,8 +38,12 @@ public class page_2 extends libraries
 	}
 	public void clk_button()
 	{
-		we=clickable(button,120); //adding webdriver waits for sigin
-		we.click();
+//		we=clickable(button,120); //adding webdriver waits for sigin
+//		we.click();
+		we=dr.findElement(button);
+		Actions actions=new Actions(dr);
+		actions.moveToElement(we).click().build().perform();
+		
 	}
 	public void username(String u)
 	{

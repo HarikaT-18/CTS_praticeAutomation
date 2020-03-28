@@ -6,13 +6,13 @@ import org.openqa.selenium.WebElement;
 
 import Utilites.libraries;
 
-public class page_3 extends libraries
+public class logout_page extends libraries
 {
 	WebDriver dr; //Declaring webdriver
 	WebElement we;//declaring webelement
 	
 	
-	public page_3(WebDriver dr) //creating construcor for page_3
+	public logout_page(WebDriver dr) //creating construcor for page_3
 	{
 		this.dr=dr;
 		

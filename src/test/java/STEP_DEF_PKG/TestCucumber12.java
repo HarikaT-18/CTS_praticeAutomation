@@ -5,32 +5,34 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import PAGES.page_1;
-import PAGES.page_2;
-import PAGES.page_3;
-import PAGES.page_4;
-import PAGES.page_5;
+import PAGES.demoRegistration_Page;
+import PAGES.homepage;
+import PAGES.logout_page;
+import PAGES.registration_page;
+import PAGES.shop_page;
+import Utilites.Get_Excel;
 import Utilites.libraries;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class testcucumber extends libraries {
+public class TestCucumber12 extends libraries {
 	
-	static final Logger log = Logger.getLogger(testcucumber.class);
+	static final Logger log = Logger.getLogger(TestCucumber12.class);
 
 	protected static WebDriver dr;
-  	page_1 p1;
-  	page_2 p2;
-  	page_3 p3;
-  	page_4 p4;
-  	page_5 p5;
+	homepage p1;
+	registration_page p2;
+	logout_page p3;
+	shop_page p4;
+	demoRegistration_Page p5;
+	
   	String eid = null;
   	 String pwd = null;
   	@Given("^the user launch the Chrome application$")
   	public void the_user_launch_the_Chrome_application() throws Throwable {
+  		
   		dr=Launch_browser("CHROME","http://practice.automationtesting.in/");
     		dr.manage().window().maximize();
     		dr.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
@@ -40,14 +42,14 @@ public class testcucumber extends libraries {
 
   	@When("^the user open my Account page to register$")
   	public void the_user_open_my_Account_page_to_register() throws Throwable{
-  		page_1 p1=new page_1(dr);
+  		homepage p1=new homepage(dr);
   	  	 p1.clk_ac();
   	}
 
   	@Then("^the user register using \"([^\"]*)\" and \"([^\"]*)\"$")
   	public void the_user_register_using_and(String arg1, String arg2) throws Throwable
   	{
-  		p2=new page_2(dr);
+  		p2=new registration_page(dr);
   	  	 p2.registration(arg1,arg2);
   	  	 
   	  	Screenshot();
@@ -60,19 +62,37 @@ public class testcucumber extends libraries {
   	 }
   	 catch(Exception e)
   	 
-  	 {  	   page_3 p3=new page_3(dr);
+  	 {  	   logout_page p3=new logout_page(dr);
 	   p3.clk_logout();
 	   log.info(" Register happenned sucessfully");
   	 }
   		
   	}
+  	
+  	
+  	@When("^User enters valid login credentials  of set (\\d+) & clicks on login$")
+	public void user_enters_valid_login_credentials_of_set_clicks_on_login(int arg1)
+	{
+  		System.out.println("User enters login credentials & clicks on login");
+		log.info("Login for valid data");
+		Get_Excel G1=new Get_Excel();
+  		G1.get_Excel();                                   // getting data from excel 
+		int row=arg1;
+		String Username=G1.testdata[row][0];
+		String Password=G1.testdata[row][1];
+		System.out.println(Username+" "+Password);
+		 p2=new registration_page(dr);
+		p2.login(Username,Password);
+  	  Screenshot();
+  	  
+	}
 
   	@Then("^user login using \"([^\"]*)\" and \"([^\"]*)\"$")
   	public void user_login_using_and(String arg1, String arg2) throws Throwable{
   
     	  String l = null;
     	  String p = null;
-    	  p2=new page_2(dr);
+    	  p2=new registration_page(dr);
     	  p2.login(arg1,arg2);
     	  Screenshot();
     	 
@@ -93,7 +113,7 @@ public class testcucumber extends libraries {
   	
   	@Then("^user click on the shop button and click on the add to cart button$")
   	public void user_click_on_the_shop_button_and_click_on_the_add_to_cart_button() throws Throwable {
-  		 p4=new page_4(dr);
+  		 p4=new shop_page(dr);
   	  	  p4.clk_operations();
   	  	 log.info("Items are added to the cart");
   	  	Screenshot();
@@ -101,15 +121,12 @@ public class testcucumber extends libraries {
   	
   	@Then("^user click on the Demo site and enters the details$")
   	public void user_click_on_the_Demo_site_and_enters_the_details() throws Throwable {
-  		p5=new page_5(dr);
+  		p5=new demoRegistration_Page(dr);
     	  p5.demosite("h","t","skdnagar", "asdfgh@gmail.com","1234432255","Zxcvbnml9@","Zxcvbnml9@");
     	  log.info("Registration for demo site is sucessfully done");
     	  Screenshot();
   	}
+}
   		
   		
   		
-  	}
-
-	
-

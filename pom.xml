@@ -16,7 +16,7 @@
     <version>2.22.2</version>
     <configuration>
     <suiteXmlFiles>
-    <suiteXmlFile>  testng12.xml  </suiteXmlFile>testng12.xml
+    <suiteXmlFile> testng12.xml </suiteXmlFile>testng12.xml
     </suiteXmlFiles>
     </configuration> 
   </plugin>

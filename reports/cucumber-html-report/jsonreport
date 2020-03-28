@@ -1,0 +1,339 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "#1",
+        "description": "Register with valid data",
+        "id": "automation-website;#1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16383648200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user launch the Chrome application",
+            "match": {
+              "location": "TestCucumber12.the_user_launch_the_Chrome_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1402247800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user open my Account page to register",
+            "match": {
+              "location": "TestCucumber12.the_user_open_my_Account_page_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42378390300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user register using \"bltkanchav98@gmail.com\" and \"Siruser@i987785#\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bltkanchav98@gmail.com",
+                  "offset": 25
+                },
+                {
+                  "val": "Siruser@i987785#",
+                  "offset": 54
+                }
+              ],
+              "location": "TestCucumber12.the_user_register_using_and(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "#2",
+        "description": "Register with Invalid data",
+        "id": "automation-website;#2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14880144700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user launch the Chrome application",
+            "match": {
+              "location": "TestCucumber12.the_user_launch_the_Chrome_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1863313800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user open my Account page to register",
+            "match": {
+              "location": "TestCucumber12.the_user_open_my_Account_page_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7783887200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user register using \"bltcts55@gmail.com\" and \"Asvthoraipakkam9877\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bltcts55@gmail.com",
+                  "offset": 25
+                },
+                {
+                  "val": "Asvthoraipakkam9877",
+                  "offset": 50
+                }
+              ],
+              "location": "TestCucumber12.the_user_register_using_and(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Displays an error message that already registered",
+            "match": {
+              "location": "TestCucumber12.Displays_an_error_message_that_already_registered()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "#3",
+        "description": "login with Valid data",
+        "id": "automation-website;#3;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19019270400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user launch the Chrome application",
+            "match": {
+              "location": "TestCucumber12.the_user_launch_the_Chrome_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1652844200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user open my Account page to register",
+            "match": {
+              "location": "TestCucumber12.the_user_open_my_Account_page_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9153404500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User enters valid login credentials  of set 0 \u0026 clicks on login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 44
+                }
+              ],
+              "location": "TestCucumber12.user_enters_valid_login_credentials_of_set_clicks_on_login(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click on the login button user go to the next page",
+            "match": {
+              "location": "TestCucumber12.click_on_the_login_button_user_go_to_the_next_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "#4",
+        "description": "shop and add in the Automation website",
+        "id": "automation-website;#4",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15003224800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the user launch the Chrome application",
+            "match": {
+              "location": "TestCucumber12.the_user_launch_the_Chrome_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2181383600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the user open my Account page to register",
+            "match": {
+              "location": "TestCucumber12.the_user_open_my_Account_page_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6375608100,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user login using \"user45@gmail.com\" and \"mohankumar@6045\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user45@gmail.com",
+                  "offset": 18
+                },
+                {
+                  "val": "mohankumar@6045",
+                  "offset": 41
+                }
+              ],
+              "location": "TestCucumber12.user_login_using_and(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9209990200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user click on the shop button and click on the add to cart button",
+            "match": {
+              "location": "TestCucumber12.user_click_on_the_shop_button_and_click_on_the_add_to_cart_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "#5",
+        "description": "Open Demo Suite for registration",
+        "id": "automation-website;#5",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15851848200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the user launch the Chrome application",
+            "match": {
+              "location": "TestCucumber12.the_user_launch_the_Chrome_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1180925900,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "the user open my Account page to register",
+            "match": {
+              "location": "TestCucumber12.the_user_open_my_Account_page_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4842406100,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user login using \"user45@gmail.com\" and \"mohankumar@6045\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user45@gmail.com",
+                  "offset": 18
+                },
+                {
+                  "val": "mohankumar@6045",
+                  "offset": 41
+                }
+              ],
+              "location": "TestCucumber12.user_login_using_and(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8934789600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user click on the Demo site and enters the details",
+            "match": {
+              "location": "TestCucumber12.user_click_on_the_Demo_site_and_enters_the_details()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Automation Website",
+    "description": "",
+    "id": "automation-website",
+    "keyword": "Feature",
+    "uri": "automation_Practice.feature"
+  }
+]

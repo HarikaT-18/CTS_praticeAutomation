@@ -7,21 +7,21 @@ import org.openqa.selenium.support.ui.Select;
 
 import Utilites.libraries;
 
-public class page_5 extends libraries
+public class demoRegistration_Page extends libraries
 {
 	WebDriver dr; //Declaring webdriver
 	WebElement we; //Declaring webelement
 	
 	
-	public page_5(WebDriver dr) //creating constructor for page_5
+	public demoRegistration_Page(WebDriver dr) //creating constructor for page_5
 	{
 		this.dr=dr;
 		
 	}
 	
 	By demo=By.xpath("//ul[@id='main-nav']//li[5]//a"); //xpath for demo
-	By firstname=By.xpath("//input[@placeholder='First Name']"); //xpath for first name
-	By Lastname=By.xpath("//input[@placeholder='Last Name']"); //xpath for lastname
+	By firstName=By.xpath("//input[@placeholder='First Name']"); //xpath for first name
+	By LastName=By.xpath("//input[@placeholder='Last Name']"); //xpath for lastname
 	By address=By.xpath("//textarea[@ng-model='Adress']");//xpath for address
 	By email=By.xpath("//input[@ng-model='EmailAdress']"); //xpath for email
 	By phone=By.xpath("//input[@ng-model='Phone']");//xpath for phone number
@@ -29,7 +29,7 @@ public class page_5 extends libraries
 	By hobbies=By.xpath("//input[@id='checkbox1']");//xpath for hobbiess
 	By languages=By.xpath("//div[@class='ui-autocomplete-multiselect ui-state-default ui-widget']");//xpath for languages
 	By skills=By.xpath("//select[@id='Skills']");//xpath for skills
-	By dropdown=By.xpath("//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all']//li[8]//a");
+	//By dropdown=By.xpath("//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all']//li[8]//a");
 	By country=By.xpath("//select[@id='countries']");
 	By dropdown_selcountry=By.xpath("//span[@class='select2-selection__arrow']");//xpath for dropdown in countries
 	By select_country=By.xpath("//*[@id=\"select2-country-results\"]/li[6]"); //xpath for textarea in countries
@@ -48,12 +48,12 @@ public class page_5 extends libraries
 	
 	public void f_n(String f_name)
 	{
-		we=waitelement(firstname, 20);
+		we=waitelement(firstName, 20);
 		we.sendKeys(f_name);
 	}
 	public void l_n(String l_name)
 	{
-		we=waitelement(Lastname, 20);
+		we=waitelement(LastName, 20);
 		we.sendKeys(l_name);
 	}
 	public void add(String adds)
@@ -93,16 +93,16 @@ public class page_5 extends libraries
 		Select s1=new Select(we1);
 		s1.selectByVisibleText("C");
 	}
-	public void drop_co()
-	{
-		we=clickable(dropdown,80);
-		we.click();
-	}
-//	public void sel_country()
+//	public void drop_co()
 //	{
-//		we=clickable(country, 20);
+//		we=clickable(dropdown,80);
 //		we.click();
 //	}
+	public void sel_country()
+	{
+		we=clickable(country, 20);
+		we.click();
+	}
 	
 	public void sel_counteries()
 	{
@@ -151,6 +151,7 @@ public class page_5 extends libraries
 		we=clickable(button, 20);
 		we.click();
 	}
+	//creating method for calling above things
 	public void demosite(String f2,String l2,String a2,String e2,String p2,String q2,String r2)
 	{
 		this.clk_demo();
@@ -162,12 +163,9 @@ public class page_5 extends libraries
 		this.clk_gender();
 		this.select_hobbies();
 		this.lan();
-		//this.d1();
-		this.drop_co();
+		//this.drop_co();
 		this.select_skills();
-		
-		//this.sel_country();
-		
+		this.sel_country();
 		this.sel_counteries();
 		this.drop_coun();
 		this.sel_countries();
@@ -176,8 +174,13 @@ public class page_5 extends libraries
 		this.clk_day();
 		this.enter_password(q2);
 		this.con_pwd(r2);
-		this.clk_submit();
+	 	this.clk_submit();
 	}
 	
+	public  String getTitleOfPage() {
+
+		return dr.getTitle();
+
+	}
 
 }

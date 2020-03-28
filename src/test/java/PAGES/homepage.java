@@ -6,12 +6,12 @@ import org.openqa.selenium.WebElement;
 
 import Utilites.libraries;
 
-public class page_1 extends libraries
+public class homepage extends libraries
 {
 	WebDriver dr;  //declaring  webdriver variable
 	
 	
-	public page_1(WebDriver dr) //creating Constructor for page_1
+	public homepage(WebDriver dr) //creating Constructor for page_1
 	{
 		this.dr=dr;
 		
